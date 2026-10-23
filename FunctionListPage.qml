@@ -1,10 +1,11 @@
 import QtQuick
 import QtQuick.Layouts
 import qs.Common
+import qs.DCommon.Common as DCommon
 import qs.Widgets
 import "Functions.js" as Fn
 
-// "全部快捷功能列表" page -- shown in place of the key grid when the 4-square
+// "All shortcuts" list page -- shown in place of the key grid when the 4-square
 // button is toggled. Lists every shortcut function that is NOT already pinned
 // to the fixed row, each 3 standard key-widths wide. A pencil button fixed
 // bottom-right enters edit mode, in which items can be dragged into the fixed
@@ -76,7 +77,7 @@ Item {
                         color: item.dis ? Theme.surfaceVariantText : Theme.surfaceText
                     }
                     StyledText {
-                        text: item.fi.label
+                        text: I18n.trFor("virtualKeyboard", item.fi.label)
                         font.pixelSize: Theme.fontSizeSmall * root.keyScale
                         color: item.dis ? Theme.surfaceVariantText : Theme.surfaceText
                     }
@@ -120,7 +121,7 @@ Item {
         anchors.topMargin: 12 * keyScale
         anchors.horizontalCenter: parent.horizontalCenter
         visible: root.items.length === 0
-        text: "全部功能都已固定"
+        text: I18n.trFor("virtualKeyboard", "All functions are pinned")
         font.pixelSize: Theme.fontSizeSmall * root.keyScale
         color: Theme.surfaceVariantText
     }
@@ -152,7 +153,7 @@ Item {
         anchors.bottom: parent.bottom
         anchors.bottomMargin: 6 * keyScale
         visible: root.editing
-        text: "按住并拖动以自定义"
+        text: I18n.trFor("virtualKeyboard", "Press and drag to customize")
         font.pixelSize: Theme.fontSizeSmall * root.keyScale
         color: Theme.surfaceVariantText
     }

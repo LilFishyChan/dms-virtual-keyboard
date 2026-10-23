@@ -4,7 +4,7 @@ import qs.Common
 import qs.Widgets
 import "Functions.js" as Fn
 
-// The "固定快捷功能" row, always shown directly above the number row.
+// The pinned-shortcuts row, always shown directly above the number row.
 //
 // [4-square][ ...fixed items... ][hide] -- the fixed area sits between the two
 // fixed-width buttons. The fixed items are laid out dynamically: however many

@@ -62,12 +62,16 @@ Then enable it in DMS: `Mod+,` → Plugins → **Virtual Keyboard Enhanced**.
 
 ### What this build changes vs upstream
 
-- Shortcut catalog trimmed to local keys (drag / float / pin / resize /
-  opacity) and DMS verbs. The twelve `niri msg action` shortcuts that shipped
-  upstream are **removed** — the fixed row and the all-functions page no longer
-  list focus/move-window/workspace actions.
+- Shortcut catalog trimmed to local keys (drag / float / pin / resize) and DMS
+  verbs. The twelve `niri msg action` shortcuts that shipped upstream are
+  **removed**, as is the opacity shortcut key and the opacity slider in the
+  settings page.
 - `name` reads **Virtual Keyboard Enhanced**; `id` stays `virtualKeyboard` so
-  existing settings keep working.
+  existing DMS settings keep working.
+- UI strings go through `I18n.trFor("virtualKeyboard", …)`, so the plugin
+  follows the shell's language setting. `translations/zh_CN.json` ships a
+  Simplified Chinese translation; anything not in the table falls back to the
+  English source string (the default for any other locale).
 
 
 ### ydotool

@@ -7,21 +7,21 @@
 // functions without a cmd (drag/float/pin/resize) are handled internally.
 var defs = [
     // --- local keyboard functions ---
-    { id: "drag", label: "拖动", icon: "open_with" },
-    { id: "float", label: "浮动", icon: "picture_in_picture_alt", labelAlt: "贴底", iconAlt: "dock_to_bottom" },
-    { id: "pin", label: "固定", icon: "keep", labelAlt: "浮层", iconAlt: "keep_off" },
-    { id: "resize", label: "调整大小", icon: "aspect_ratio" },
+    { id: "drag", label: "Drag", icon: "open_with" },
+    { id: "float", label: "Float", icon: "picture_in_picture_alt", labelAlt: "Dock", iconAlt: "dock_to_bottom" },
+    { id: "pin", label: "Pin", icon: "keep", labelAlt: "Overlay", iconAlt: "keep_off" },
+    { id: "resize", label: "Resize", icon: "aspect_ratio" },
 
     // --- DMS common ---
-    { id: "clipboard", label: "剪贴板 (dms)", icon: "content_paste", cmd: ["dms", "ipc", "call", "clipboard", "toggle"] },
-    { id: "dms-cc", label: "控制中心 (dms)", icon: "tune", cmd: ["dms", "ipc", "call", "control-center", "toggle"] },
-    { id: "dms-launcher", label: "启动器 (dms)", icon: "apps", cmd: ["dms", "ipc", "call", "launcher", "toggle"] },
-    { id: "dms-dash", label: "仪表盘 (dms)", icon: "widgets", cmd: ["dms", "ipc", "call", "dash", "toggle"] },
-    { id: "dms-vol-up", label: "音量+ (dms)", icon: "volume_up", cmd: ["dms", "ipc", "call", "audio", "increment", "5"] },
-    { id: "dms-vol-down", label: "音量- (dms)", icon: "volume_down", cmd: ["dms", "ipc", "call", "audio", "decrement", "5"] },
-    { id: "dms-mute", label: "静音 (dms)", icon: "volume_off", cmd: ["dms", "ipc", "call", "audio", "mute"] },
-    { id: "dms-bri-up", label: "亮度+ (dms)", icon: "brightness_high", cmd: ["dms", "ipc", "call", "brightness", "increment", "5"] },
-    { id: "dms-bri-down", label: "亮度- (dms)", icon: "brightness_low", cmd: ["dms", "ipc", "call", "brightness", "decrement", "5"] }
+    { id: "clipboard", label: "Clipboard (dms)", icon: "content_paste", cmd: ["dms", "ipc", "call", "clipboard", "toggle"] },
+    { id: "dms-cc", label: "Control Center (dms)", icon: "tune", cmd: ["dms", "ipc", "call", "control-center", "toggle"] },
+    { id: "dms-launcher", label: "Launcher (dms)", icon: "apps", cmd: ["dms", "ipc", "call", "launcher", "toggle"] },
+    { id: "dms-dash", label: "Dash (dms)", icon: "widgets", cmd: ["dms", "ipc", "call", "dash", "toggle"] },
+    { id: "dms-vol-up", label: "Volume + (dms)", icon: "volume_up", cmd: ["dms", "ipc", "call", "audio", "increment", "5"] },
+    { id: "dms-vol-down", label: "Volume - (dms)", icon: "volume_down", cmd: ["dms", "ipc", "call", "audio", "decrement", "5"] },
+    { id: "dms-mute", label: "Mute (dms)", icon: "volume_off", cmd: ["dms", "ipc", "call", "audio", "mute"] },
+    { id: "dms-bri-up", label: "Brightness + (dms)", icon: "brightness_high", cmd: ["dms", "ipc", "call", "brightness", "increment", "5"] },
+    { id: "dms-bri-down", label: "Brightness - (dms)", icon: "brightness_low", cmd: ["dms", "ipc", "call", "brightness", "decrement", "5"] }
 ]
 
 function ids() {

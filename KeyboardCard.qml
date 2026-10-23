@@ -36,7 +36,7 @@ StyledRect {
     signal floatClicked
     // Fixed-row contents changed (edit mode); the daemon persists them.
     signal fixedItemsEdited(var items)
-    // Emitted while the "拖动" shortcut is dragged, in scene coordinates.
+    // Emitted while the "Drag" shortcut is dragged, in scene coordinates.
     signal dragStarted
     signal dragMoved(real dx, real dy)
 
@@ -136,7 +136,7 @@ StyledRect {
 
     radius: Theme.cornerRadius
     color: Theme.readableSurface
-    // Keyboard opacity (adjustable from the settings slider or the 透明度 key).
+    // Keyboard opacity (kept fixed at 1.0 in this build: no opacity control).
     opacity: root.ydotool ? root.ydotool.keyboardOpacity : 1
     border.width: (root.editing || root.resizing) ? 2 : 1
     border.color: (root.editing || root.resizing) ? Theme.primary : Theme.outlineVariant

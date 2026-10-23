@@ -1,0 +1,24 @@
+{
+    "Virtual Keyboard": {
+        "Toggle the keyboard with `dms ipc call virtualKeyboard toggle` (bindable to a compositor keybind), or add the optional bar pill to DankBar.": "用 `dms ipc call virtualKeyboard toggle` 开关键盘（可绑定到合成器快捷键），或把可选的状态栏胶囊加到 DankBar。",
+        "Float by default": "默认浮动",
+        "Open the keyboard as a movable floating window rather than docked at the bottom of the screen": "以可移动的浮动窗口打开键盘，而不是停靠在屏幕底部",
+        "Drag": "拖动",
+        "Float": "浮动",
+        "Dock": "贴底",
+        "Pin": "固定",
+        "Overlay": "浮层",
+        "Resize": "调整大小",
+        "Clipboard (dms)": "剪贴板 (dms)",
+        "Control Center (dms)": "控制中心 (dms)",
+        "Launcher (dms)": "启动器 (dms)",
+        "Dash (dms)": "仪表盘 (dms)",
+        "Volume + (dms)": "音量＋ (dms)",
+        "Volume - (dms)": "音量－ (dms)",
+        "Mute (dms)": "静音 (dms)",
+        "Brightness + (dms)": "亮度＋ (dms)",
+        "Brightness - (dms)": "亮度－ (dms)",
+        "All functions are pinned": "全部功能都已固定",
+        "Press and drag to customize": "按住并拖动以自定义"
+    }
+}
