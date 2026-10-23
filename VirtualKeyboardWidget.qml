@@ -21,35 +21,16 @@ PluginComponent {
         PluginService.setGlobalVar(root.pluginId, "open", !root.keyboardOpen)
     }
 
+    // Bare glyph, like the built-in bar widgets: the host draws the pill
+    // background and its equal padding. Drawing our own chip on top of it
+    // only pushes the icon into the pill edges.
     horizontalBarPill: Component {
-        StyledRect {
-            width: parent.widgetThickness
-            height: parent.widgetThickness
-            radius: Theme.cornerRadius
-            color: root.keyboardOpen ? Theme.primaryContainer : Theme.surfaceContainerHigh
-
-            DankIcon {
-                anchors.centerIn: parent
-                name: "keyboard"
-                size: root.iconSize
-                color: root.keyboardOpen ? Theme.primary : Theme.surfaceText
-            }
+        DankIcon {
+            name: "keyboard"
+            size: root.iconSize
+            color: root.keyboardOpen ? Theme.primary : Theme.surfaceText
         }
     }
 
-    verticalBarPill: Component {
-        StyledRect {
-            width: parent.widgetThickness
-            height: parent.widgetThickness
-            radius: Theme.cornerRadius
-            color: root.keyboardOpen ? Theme.primaryContainer : Theme.surfaceContainerHigh
-
-            DankIcon {
-                anchors.centerIn: parent
-                name: "keyboard"
-                size: root.iconSize
-                color: root.keyboardOpen ? Theme.primary : Theme.surfaceText
-            }
-        }
-    }
+    verticalBarPill: horizontalBarPill
 }
