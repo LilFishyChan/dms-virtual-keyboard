@@ -11,7 +11,6 @@ var defs = [
     { id: "float", label: "浮动", icon: "picture_in_picture_alt", labelAlt: "贴底", iconAlt: "dock_to_bottom" },
     { id: "pin", label: "固定", icon: "keep", labelAlt: "浮层", iconAlt: "keep_off" },
     { id: "resize", label: "调整大小", icon: "aspect_ratio" },
-    { id: "opacity", label: "透明度", icon: "opacity" },
 
     // --- DMS common ---
     { id: "clipboard", label: "剪贴板 (dms)", icon: "content_paste", cmd: ["dms", "ipc", "call", "clipboard", "toggle"] },
